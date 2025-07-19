@@ -1,0 +1,185 @@
+/* 광고창 */
+    .advertise_box {
+        background: #91C8E4;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .advertise_txt {
+        color: #fff;
+    }
+/* 헤더 */
+    .main_box {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .main_logo .logo img {
+        width: 235px;
+    }
+    nav {
+        text-align: center;
+    }
+    .nav_above {
+        display: flex;
+        padding: 16px 0 32px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_below {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .nav_above li,
+    .nav_below li {
+        padding-right: 28px;
+    }
+    .nav_above li a, 
+    .nav_below li a {
+        font-weight: 500;
+    }
+    .user_info {
+        padding-top: 16px;
+    }
+    .user_info a {
+        padding-left: 30px;
+    }
+/* 메인 */
+    .first_cont {
+        padding-top: 30px;
+    }
+    .content_wrap {
+        height: 760px;
+    }
+    .slide_01 {
+        display: flex;
+    }
+    .food_img_01 {
+        background-image: url();
+    }
+    .slide_txt_01 {
+        font-size: 3.125rem;
+        font-weight: 500;
+    }
+    .slide_txt_02 {
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 12px 0; 
+    }
+    .btn_allmenu {
+        width: 210px;
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        color: #fff;
+        font-weight: 500;
+        background: #4682A9;
+        padding: 12.5px 20px; 
+    }
+    .slide_03 {
+        background: #91C8E4;
+    }
+    .delivery {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .deli_box {
+        padding-right: 124px;
+    }
+    .deli_txt_box {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .deli_txt_01 {
+        width: 380px;
+        text-align: center;
+        font-size: 3.125rem;
+        font-weight: 700;
+        color: #fff;
+        background: #00AAFF;
+    }
+    .deli_txt_02 {
+        font-size: 3.125rem;
+        font-weight: 700;
+        color: #fff;
+        padding-left: 14px;        
+    }
+    .today_txt {
+        font-size: 12.5rem;
+        font-weight: 700;
+        color: #fff;
+    }
+/* 배송비 무료 배너 */
+    .delivery_bnr {
+        background: #91C8E4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 27px 0;
+    }
+    .delivery_txt {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: right;
+        padding-right: 75px;
+    }
+    .txt_01 {
+        font-size: 1.875rem;
+        font-weight: 500;
+        color: #fff;
+        padding-bottom: 8px;
+    }
+    .txt_02 {
+        font-weight: 500;
+        color: #fff;
+    }
+    /* 품질가격 배너 */
+    .quality_bnr {
+        background: #91C8E4;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        text-align: center;
+        padding: 56px 0;
+    }
+    .qua_txt_01 {
+        font-size: 1.875rem;
+        font-weight: 500;
+        color: #fff;
+        padding-bottom: 8px;
+    }
+    .qua_txt_02 {
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* 푸터 */
+.footer_box {
+    background: #F6F4EB;
+    display: flex;
+    padding: 132px 120px;
+}
+.bold {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.regular {
+    font-size: 0.875rem;
+    color: #767676;
+}
+.basic_info_01 {
+    display: flex;
+    padding-top: 52px;
+}
+.basic_info_02 {
+    display: flex;
+}
+.basic_info_03 {
+    display: flex;
+}
+.copyright {
+    display: flex;
+}
