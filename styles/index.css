@@ -25,7 +25,6 @@
         align-items: center;
         justify-content: center;
     }
-
     .nav_above li {
         padding-right: 28px;
     }
@@ -34,6 +33,72 @@
     }
     .user_info a {
         padding-left: 30px;
+    }
+    .mobile_box {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        position: relative;
+    }
+    .hamburger {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+    .hamburger span {
+        display: block;
+        height: 2px;
+        background-color: #000;
+        border-radius: 1px;
+    }
+    .mobile_logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-85%);
+    }
+    .mobile_info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .mobile_logo img {
+        height: 30px;
+    }
+
+    /* 모바일용 메뉴 */
+    .mobile_nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+    .mobile_logo img {
+        height: 30px;
+    }
+    .mobile_nav ul {
+        list-style: none;
+        padding: 20px 0;
+        margin: 0;
+    }
+    .mobile_nav li {
+        padding: 12px 0;
+    }
+    .mobile_nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 0.875rem;
     }
 /* 메인 */
     .swiper-container {
@@ -129,6 +194,7 @@
         color: #fff;
         padding: 12px 120px;
         background: #4682A9;
+        text-align: center;
     }
     .third_cont {
         margin: 0 195px 130px 195px;
@@ -138,7 +204,7 @@
         margin-right: 10%;
     }
     .forth_cont {
-        margin: 130px 195px;
+        padding: 130px 195px;
     }
     .reco_box {
         position: relative;
@@ -220,7 +286,7 @@
         padding-top: 10px;
         color: #555;
     }
-    /* 푸터 */
+/* 푸터 */
 .footer_box {
     background: #F6F4EB;
     display: flex;
@@ -318,4 +384,237 @@
 }
 .sns_txt {
     padding: 6px 0;
+}
+.info,
+.right {display: none;}
+@media (max-width: 1510px) {
+    .main_box {
+        display: none;
+    }
+    .mobile_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;  
+    }
+    .hamburger,
+    .mobile_logo,
+    .mobile_info {
+        display: flex;
+        margin: 30px 40px;
+    }
+    .second_cont,
+    .third_cont,
+    .forth_cont,
+    .fifth_cont {
+        padding: 40px;
+    }
+    .third_cont {
+        margin: 0;
+    }
+    .content_title {
+        font-size: 1.5rem;
+        padding-bottom: 40px;
+    }
+    .more_product {
+        padding-top: 60px;
+    }
+    .more_product {
+        font-size: 1rem;
+    }
+    .new_product,
+    .brand_product {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product_box {
+        width: 47%;
+        margin-right: 0;
+    }
+
+    .reco_all_product {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .footer_box {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    .badarang,
+    .haepoom,
+    .company_info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info_box {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .main_box {
+        padding: 20px 10px;
+    }
+
+    .main_logo .logo img {
+        width: 180px;
+    }
+
+    .nav_above {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_above li {
+        padding: 6px 0;
+    }
+
+    .user_info a {
+        padding-left: 10px;
+    }
+
+    .content_title {
+        font-size: 1.5rem;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .new_product,
+    .brand_product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_box {
+        width: 100%;
+    }
+    .more_btn {
+        font-size: 1.125rem;
+        padding: 10px 40px;
+    }
+
+    .delivery_bnr {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .delivery_txt {
+        padding-right: 0;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .quality_bnr {
+        padding: 40px 10px;
+    }
+
+    .reco_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .reco_all_product {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .footer_box {
+        padding: 50px 20px;
+    }
+
+    .terms_info {
+        text-align: center;
+    }
+
+    .info_box {
+        gap: 20px;
+    }
+
+    .customer_service,
+    .payment_info,
+    .sns {
+        align-items: flex-start;
+    }
+
+    .copyright {
+        justify-content: center;
+        font-size: 0.75rem;
+    }
+    .delivery_txt {
+        padding: 0;
+    }
+    .delivery_img img {
+        display: none;
+    }
+    .txt_01 {
+        font-size: 1.2rem;
+    }
+    .forth_cont {
+        display: flex;
+        justify-content: center;
+    }
+    .bold,
+    .regular {
+        font-size: 0.75rem;
+    }
+    .footer_box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .badarang,
+  .haepoom,
+  .company_info {
+    width: 100%;
+  }
+
+  .logo_img img,
+  .hp_logo_img img {
+    display: none;
+  }
+  .basic_info_01 {padding: 0;}
+  .basic_info_01,
+  .basic_info_02,
+  .basic_info_03,
+  .hp_info,
+  .terms_info,
+  .info_box {
+    margin-top: 10px;
+  }
+  .hp_info {
+    align-items: flex-start;
+  }
+
+  .terms_info a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 0.875rem;
+  }
+
+  .sns_box {
+    flex-flow: row nowrap;
+  }
+  .sns a {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .copyright {
+    font-size: 0.8em;
+  }
+  .hp_info span {
+    display: block;
+    margin-bottom: 4px;
+  }
+  .copy {display: none;}
+  .info {padding: 0;}
 }
